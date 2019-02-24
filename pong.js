@@ -4,7 +4,7 @@ var play = false;
 var posx = 40;
 var posy = 20;
 var step = 1;
-var speed = 5;
+var speed = 2;
 var size = 20;
 var initialangle = Math.PI/6; //Toujours de 0 à 2.pi
 var stepx = Math.cos(initialangle)*step;
@@ -79,11 +79,11 @@ class Bar {
   }
 
   moveUp() {
-    if(this.y<=600-5-barsize) this.y = this.y + 5;
+    if(this.y<=600-2-barsize) this.y = this.y + 2;
   }
 
   moveDown() {
-    if(this.y>=5) this.y = this.y - 5;
+    if(this.y>=2) this.y = this.y - 2;
   }
 
   onBar() {
